@@ -1,5 +1,5 @@
 //Ciclo For
-const numero = +prompt("Ingrese la cantidad de holas que quiere ver por consola:");
+const numero = parseInt(prompt("Ingrese la cantidad de holas que quiere ver por consola:"));
 for (let i = 0; i < numero; i++) {
   console.log("Hola!!");
 }
