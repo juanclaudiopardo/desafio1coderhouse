@@ -1,13 +1,23 @@
-//Ciclo For
-const numero = parseInt(prompt("Ingrese la cantidad de holas que quiere ver por consola:"));
-for (let i = 0; i < numero; i++) {
-  console.log("Hola!!");
-}
-//Dados(ciclo Whileg)
-let dado = Math.trunc(Math.random() * 6) + 1;
+const vuelo = "LH234";
+const juan = {
+  nombre: "Juan Pardo",
+  pasaporte: 34000785,
+};
+const laura = {
+  nombre: "Laura Fernandez",
+  pasaporte: 32000768,
+};
 
-while (dado !== 6) {
-  console.log(`Te salio ${dado}`);
-  dado = Math.trunc(Math.random() * 6) + 1;
-  if (dado === 6) console.log("Se termina el juego");
-}
+const checkIn = function (numeroVuelo, pasajero) {
+  numeroVuelo = "LH999";
+  pasajero.name = "Mr. " + pasajero.nombre;
+
+  if (pasajero.pasaporte === 34000785) {
+    alert("Checked in");
+  } else {
+    alert("Pasaporte Incorrecto!");
+  }
+};
+
+checkIn(vuelo, juan);
+checkIn(vuelo, laura);
