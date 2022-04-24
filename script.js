@@ -1,23 +1,22 @@
-const vuelo = "LH234";
 const juan = {
   nombre: "Juan Pardo",
   pasaporte: 34000785,
+  vuelo: "LH234",
 };
 const laura = {
   nombre: "Laura Fernandez",
   pasaporte: 32000768,
 };
 
-const checkIn = function (numeroVuelo, pasajero) {
-  numeroVuelo = "LH999";
-  pasajero.name = "Mr. " + pasajero.nombre;
+const checkIn = function (pasajero) {
+  // pasajero.nombre = pasajero.nombre;
 
-  if (pasajero.pasaporte === 34000785) {
-    alert("Checked in");
+  if (pasajero.pasaporte === 34000785 && pasajero.vuelo === "LH234") {
+    alert(`${pasajero.nombre} Checked in`);
   } else {
-    alert("Pasaporte Incorrecto!");
+    alert(`${pasajero.nombre} Pasaporte Incorrecto!`);
   }
 };
 
-checkIn(vuelo, juan);
-checkIn(vuelo, laura);
+checkIn(juan);
+checkIn(laura);
