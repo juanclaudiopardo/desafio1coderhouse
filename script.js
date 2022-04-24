@@ -6,11 +6,10 @@ const juan = {
 const laura = {
   nombre: "Laura Fernandez",
   pasaporte: 32000768,
+  vuelo: "LH233",
 };
 
 const checkIn = function (pasajero) {
-  // pasajero.nombre = pasajero.nombre;
-
   if (pasajero.pasaporte === 34000785 && pasajero.vuelo === "LH234") {
     alert(`${pasajero.nombre} Checked in`);
   } else {
